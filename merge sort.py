@@ -1,10 +1,10 @@
-def merge_sort(arr):
-    
+def merge_sort(arr):  # O(nlgn)
+
     # the function will execute until the array has at least 2 values to sort for recursion
     if len(arr) > 1:
 
         # divide the array into half
-        midpoint = len(arr)//2
+        midpoint = len(arr) // 2
 
         left = arr[:midpoint]
         right = arr[midpoint:]
@@ -15,13 +15,13 @@ def merge_sort(arr):
 
         i = j = k = 0
 
-        #checks which side of the arrays i/j value is bigger and put it in the arrays k position
+        # checks which side of the arrays i/j value is bigger and put it in the arrays k position
         while i < len(left) and j < len(right):
 
-            if left[i] <right[j]:
+            if left[i] < right[j]:
                 arr[k] = left[i]
                 i += 1
-            
+
             else:
                 arr[k] = right[j]
                 j += 1
@@ -38,5 +38,5 @@ def merge_sort(arr):
             arr[k] = right[j]
             j += 1
             k += 1
-    
+
     return arr
