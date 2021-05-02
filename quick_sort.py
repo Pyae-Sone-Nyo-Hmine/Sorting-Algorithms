@@ -1,4 +1,4 @@
-def partition(start, end, arr):
+def partition(start, end, arr): # O(n^2)
     # sets the pivot point and it's index
     pivot_index = start
     pivot = arr[pivot_index]
@@ -21,7 +21,7 @@ def partition(start, end, arr):
     return end
 
 
-def quick_sort(start, end, arr):  # O(n^2)
+def quick_sort(start, end, arr):
     # function calls the quick sort recursively
     if start < end:
         p = partition(start, end, arr)
