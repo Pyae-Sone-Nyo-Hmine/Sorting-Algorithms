@@ -1,4 +1,4 @@
-def heapify(arr, n, i):
+def heapify(arr, n, i):  # O(nlgn)
     # set the largest value as index initially
     largest = i
 
@@ -31,4 +31,3 @@ def heap_sort(arr):
         heapify(arr, i, 0)
 
     return arr
-
